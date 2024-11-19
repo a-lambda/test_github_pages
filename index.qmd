@@ -6,6 +6,7 @@ To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
 ```{r}
 library(sf)
+library(tidyverse)
 (file <- system.file("gpkg/nc.gpkg", package = "sf"))
 nc <- st_read(file)
 st_layers(file)
