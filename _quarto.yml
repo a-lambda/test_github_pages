@@ -3,7 +3,7 @@ project:
 
 book:
   title: "test_github_pages"
-  author: "Norah Jones"
+  author: "Alain CORVISIER"
   date: "19/11/2024"
   chapters:
     - index.qmd
