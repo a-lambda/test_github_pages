@@ -16,6 +16,9 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    code-overflow: wrap
+    code-link: true
+
   pdf:
     documentclass: scrreprt
 
