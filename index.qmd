@@ -4,8 +4,30 @@ This is a Quarto book.
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
+## Load packages
+
 ```{r}
+#| label: load_packages
+#| message: false
+
 library(tidyverse)
 library(igraph)
+library(sf)
+library(deldir)
+
 ```
 
+## Display random voronoi polygons
+
+```{r}
+#| label: voronoi_polygons
+
+set.seed(1967)
+x <- rnorm(20, 0, 1.5)
+y <- rnorm(20, 0, 1)
+plot(x, y, type="n", asp=1)
+points(x, y, pch=20, col="red", cex=1)
+vtess <- deldir::deldir(x, y)
+plot(vtess, wlines="tess", labelPts=FALSE, add=TRUE, lty=1)
+
+```
