@@ -1,6 +1,7 @@
 project:
   type: book
-
+  output-dir: _book
+  
 book:
   title: "test_github_pages"
   author: "Alain CORVISIER"
