@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 _book
+_freeze
 /.quarto/
