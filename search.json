@@ -4,7 +4,37 @@
     "href": "index.html",
     "title": "test_github_pages",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(igraph)\n\n\nAttaching package: 'igraph'\n\nThe following objects are masked from 'package:lubridate':\n\n    %--%, union\n\nThe following objects are masked from 'package:dplyr':\n\n    as_data_frame, groups, union\n\nThe following objects are masked from 'package:purrr':\n\n    compose, simplify\n\nThe following object is masked from 'package:tidyr':\n\n    crossing\n\nThe following object is masked from 'package:tibble':\n\n    as_data_frame\n\nThe following objects are masked from 'package:stats':\n\n    decompose, spectrum\n\nThe following object is masked from 'package:base':\n\n    union",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#load-packages",
+    "href": "index.html#load-packages",
+    "title": "test_github_pages",
+    "section": "Load packages",
+    "text": "Load packages\n\nlibrary(tidyverse)\nlibrary(igraph)\nlibrary(sf)\nlibrary(deldir)\nlibrary(reticulate)",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#display-random-voronoi-polygons",
+    "href": "index.html#display-random-voronoi-polygons",
+    "title": "test_github_pages",
+    "section": "Display random voronoi polygons",
+    "text": "Display random voronoi polygons\n\nset.seed(1967)\nx &lt;- rnorm(20, 0, 1.5)\ny &lt;- rnorm(20, 0, 1)\nplot(x, y, type=\"n\", asp=1)\npoints(x, y, pch=20, col=\"red\", cex=1)\nvtess &lt;- deldir::deldir(x, y)\nplot(vtess, wlines=\"tess\", labelPts=FALSE, add=TRUE, lty=1)",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#python-chunk",
+    "href": "index.html#python-chunk",
+    "title": "test_github_pages",
+    "section": "python chunk",
+    "text": "python chunk\n\nfor i in range(10):\n  print(i)\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9",
     "crumbs": [
       "Preface"
     ]
