@@ -14,6 +14,7 @@ library(tidyverse)
 library(igraph)
 library(sf)
 library(deldir)
+library(reticulate)
 
 ```
 
@@ -29,5 +30,12 @@ plot(x, y, type="n", asp=1)
 points(x, y, pch=20, col="red", cex=1)
 vtess <- deldir::deldir(x, y)
 plot(vtess, wlines="tess", labelPts=FALSE, add=TRUE, lty=1)
+
+```
+
+```{python}
+
+for i in range(10):
+  print(i)
 
 ```
