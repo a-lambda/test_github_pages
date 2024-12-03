@@ -7,10 +7,3 @@ See @knuth84 for additional discussion of literate programming.
 ```{r}
 log(10)
 ```
-
-```{python}
-
-for i in range(10):
-  print(i)
-
-```
